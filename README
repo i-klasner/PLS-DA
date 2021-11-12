@@ -1,0 +1,19 @@
+Testing the effects of measurement error or PCA, PCR, and PLSDA.
+
+Datasets with generated measurement error were created for the iris data on Sepal Length 
+and Petal Length. Gamma values of 0.1, 0.3, and 0.5 were used to control the noise-to-signal
+ratios, and each was replicated 100 times. The PCA model was created and performance
+evaluated by computing specificity, sensitivity, precision, and accuracy.
+Petal Length with gamma of 0 had greater variance than Sepal Length, therefore measurement
+error had a greater effect on Petal Length.
+This was replicated for homogeneous and heterogeneous errors. Performance decreased with 
+increasing gamma values. Performance was slightly higher with heterogeneous variance.
+
+This was replicated for Height and Weight of the bodyfat data using PCR. Models were evaluated
+Mean Squared Error and Adjusted R^2. The number of principle components was selected by:
+the percentage rule, Kaiser rule, slope cutoff, and RMSEP. Performance indicated by 
+MSE increased with increasing gamma.  Weight with gamma=0 had greater variance, but
+measurement error had a greater effect on Height (indicated by R^2).
+This was replicated for homogeneous and heterogeneous errors. Performance decreased with increasing
+gammas. Performance was higher for homogeneous variance.
+  
