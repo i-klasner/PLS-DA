@@ -1,4 +1,4 @@
-Testing the effects of measurement error or PCA, PCR, and PLSDA.
+Testing the effects of measurement error on PCA, PCR, and PLSDA.
 
 Datasets with generated measurement error were created for the iris data on Sepal Length 
 and Petal Length. Gamma values of 0.1, 0.3, and 0.5 were used to control the noise-to-signal
